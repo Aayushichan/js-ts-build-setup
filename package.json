@@ -1,0 +1,9 @@
+{
+  "name": "js-ts-build-setup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Aayushichan/js-ts-build-setup.git",
+  "author": "Ayushi Chouhan <ayushi.chouhan@example.com>",
+  "license": "MIT",
+  "packageManager": "yarn@4.12.0"
+}
