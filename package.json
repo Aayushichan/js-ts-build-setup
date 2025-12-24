@@ -1,9 +1,20 @@
 {
   "name": "js-ts-build-setup",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/index.js",
+  "module": "build/index.mjs",
+  "types": "build/index.d.ts",
   "repository": "https://github.com/Aayushichan/js-ts-build-setup.git",
   "author": "Ayushi Chouhan <ayushi.chouhan@example.com>",
   "license": "MIT",
-  "packageManager": "yarn@4.12.0"
+  "packageManager": "yarn@4.12.0",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --out-dir build",
+    "dev": "tsup src/index.ts --watch",
+    "clean": "rm -rf build"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
 }
