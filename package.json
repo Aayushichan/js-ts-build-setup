@@ -11,9 +11,21 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --out-dir build",
     "dev": "tsup src/index.ts --watch",
-    "clean": "rm -rf build"
+    "clean": "rm -rf build",
+    "lint": "eslint . --ext .ts,.js",
+    "format": "prettier --write .",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.50.1",
+    "@typescript-eslint/parser": "^8.50.1",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "jest": "^30.2.0",
+    "prettier": "^3.7.4",
+    "ts-jest": "^29.4.6",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   }
